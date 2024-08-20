@@ -1,0 +1,1206 @@
+$colorPrincipal: #08e5e5;
+$principal2: #15c9c9;
+$secundario: #f24a6e;
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.colorPrincipal {
+  color: $colorPrincipal;
+}
+
+.sticky-top {
+  background: #fff;
+}
+
+.navbar-toggler {
+  span {
+    color: #000 !important;
+  }
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  .caret {
+    color: #000;
+    transition: 0.8s;
+  }
+
+  &:hover .caret {
+    color: $colorPrincipal;
+    transition: 0.8s;
+  }
+
+  color: #000;
+  transition: 0.8s;
+  position: relative;
+
+  &:hover {
+    color: $colorPrincipal;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $colorPrincipal;
+    transition: width 0.8s;
+  }
+}
+
+.searchMenu {
+  .input {
+    border: 1px solid #9f9f9f;
+    border-radius: 4px;
+    margin: 0em 0em 0em 1em;
+
+    &:focus {
+      border: 1px solid #08e5e5;
+      box-shadow: 0 0 0 0.2rem rgba(18, 151, 151, 0.103);
+    }
+
+    &.focus-visible {
+      border: 1px solid #08e5e5;
+      box-shadow: 0 0 0 0.2rem rgba(18, 151, 151, 0.103);
+    }
+  }
+
+  button {
+    border: none;
+    padding: 0.4em;
+    border-radius: 5px;
+    transition: 0.4s;
+    background: $colorPrincipal;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: $principal2;
+      color: #fff;
+
+      transition: 0.4s;
+    }
+  }
+}
+
+.itinerary {
+  .card {
+    button {
+      width: 100%;
+      text-align: left;
+      position: relative;
+      padding-right: 25px;
+
+      &::after {
+        content: '\2B9F';
+        position: absolute;
+        top: 0;
+        right: 5px;
+        transform: translateY(25%);
+      }
+    }
+  }
+}
+
+.lineaBlog2 {
+  width: 30px;
+  height: 3px;
+  background: $secundario;
+  margin-bottom: 1em;
+}
+
+.lineaBlog {
+  width: 30px;
+  height: 3px;
+  background: $principal2;
+  margin-bottom: 1em;
+}
+
+#blogCarousel {
+  height: 400px;
+  width: 100%;
+
+  .carousel-item {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 400px;
+    }
+
+    h5 {
+      text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 2em;
+      text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    }
+  }
+}
+
+.tagsRelacionados {
+  margin-top: 1.5em;
+
+  .tag {
+    background: #15c9c9;
+    padding: 0.3em;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: none;
+    }    
+  }
+
+  .related {
+    margin-bottom: 0.6em;
+
+    &:hover .col-8{
+      border-bottom: 1px dashed $principal2;
+      transition: 0.8s ease;
+    }
+
+    img {
+      width: 100%;
+      height: 60px;
+      object-fit: cover;
+    }
+
+    h5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      float: left;
+      color: #414141;
+      font-size: 18px;
+      margin-left: -1em;
+      transition: 0.4s ease;
+      &:hover{
+        color: $principal2;
+        transition: 0.4s ease;
+      }
+    }
+  }
+}
+
+.principalBlogs {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.share {
+  .btn-social {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: $secundario;
+    color: #fff;
+    border-radius: 17px;
+    text-align: center;
+    margin-left: 1em;
+    transition: 0.6s;
+    border: 1px solid $secundario;
+    transition: top 0.3s ease;
+
+    &:hover {
+      position: relative;
+      top: -3px;
+      transition: top 0.3s ease;
+    }
+
+    i {
+      display: inline-block;
+      line-height: 32px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.custom-container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5em;
+    color: white;
+    /* background: rgb(21 201 201 / 40%); */
+    text-shadow: 3px 3px 1px rgb(0 0 0);
+    font-weight: bold;
+    padding: 0.2em;
+    border-radius: 11px;
+  }
+}
+
+.form-row {
+  #name {
+    &:focus {
+      border: 1px solid $colorPrincipal;
+      box-shadow: 0 0 0 0.2rem rgba(21, 185, 185, 0.055);
+    }
+  }
+
+  .botonBlog {
+    background: #15c9c9;
+    color: white;
+    border: none;
+    font-size: 13px;
+  }
+}
+
+.custom-container-2 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    font-weight: bold;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: $colorPrincipal;
+      margin: 6px auto 0;
+      box-shadow: 3px 3px 1px rgb(0, 0, 0);
+    }
+  }
+}
+
+.tableMega {
+  img:nth-child(1) {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  img:nth-child(2) {
+    cursor: pointer;
+  }
+
+  .imgPopup {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    cursor: auto !important;
+  }
+
+  a {
+    color: #000;
+    font-weight: bold;
+
+    &:hover {
+      color: $secundario;
+    }
+  }
+}
+
+.precioTour {
+  color: $secundario;
+  font-weight: bold;
+  font-size: 22px;
+  float: left;
+}
+
+.bg-dark {
+  color: #fff;
+  padding-top: 3em;
+  padding-bottom: 1em;
+
+  h4 {
+    color: #fff;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 10%;
+      height: 2px;
+      background-color: $principal2;
+    }
+  }
+
+  .links {
+    padding-bottom: 3em;
+
+    ul {
+      list-style: none;
+      margin-left: -2.5em;
+
+      li {
+        font-size: 14px;
+
+        &:hover span {
+          visibility: visible;
+          transition: 0.2s ease;
+          color: $principal2;
+        }
+
+        span {
+          transition: 0.2s ease;
+          color: $principal2;
+        }
+      }
+    }
+
+    a {
+      color: #fff;
+      transition: 0.6s;
+      text-decoration: none;
+
+      &:hover {
+        color: $colorPrincipal;
+        transition: 0.6s;
+      }
+    }
+
+    .sociales {
+      a {
+        margin-right: 0.6em;
+        font-size: 24px;
+      }
+
+      .contact {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .derechos {
+    font-size: 13px;
+    border-top: 1px solid grey;
+    padding-top: 2em;
+  }
+}
+
+.btnReserva {
+  color: #fff;
+  border: 1px solid red;
+  padding: 0.4em 2em;
+  border-radius: 5px;
+  background: red;
+
+  &:hover {
+    background: rgb(216, 23, 23);
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.containerReviews {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  background: linear-gradient(rgb(14 14 14 / 26%), rgb(6 120 137 / 45%)), url(../img/fondos/Nevado-Huascaran-Peru.webp) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .carousel-inner {
+    .circulo {
+      width: 130px;
+      height: 130px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .cardReview {
+    background: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    i {
+      color: gold;
+    }
+  }
+}
+
+
+.navMega {
+  ul {
+    li {
+      a {
+        font-family: Poppins, sans-serif;
+        color: #484848;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.megaMenu {
+  border-bottom: 1px dashed grey;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.info {
+  background: $principal2;
+  color: #fff;
+
+  .infoMail {
+    margin-left: 6em;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  .redesContent {
+    padding-right: 8em;
+
+    .redes {
+      float: right;
+      margin-left: 1em;
+    }
+  }
+
+}
+
+.dropdown-menu {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+  padding: 0px !important;
+
+  .dropdown-item:hover {
+    background: $principal2;
+    color: #fff;
+  }
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 70px;
+  text-shadow: 4px 3px 5px rgb(0 0 0 / 34%);
+  position: relative;
+  padding-bottom: 0.2em;
+}
+
+.btnTag {
+  color: #007bff;
+  transition: 0.4s ease;
+  font-size: 14px;
+  background: #f3f3f3;
+  border-radius: 20px;
+  padding: 0.4em 0.4em;
+  border: 1px solid transparent;
+
+  &:hover {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.4s ease;
+    border: 1px solid #8080806b;
+    background: #fff;
+    transition: 0.4s ease;
+  }
+}
+
+.carousel-caption h5::after {
+  content: '';
+  display: block;
+  background-color: #08e5e5;
+  width: 70px;
+  height: 4px;
+  position: absolute;
+  bottom: 8px;
+  /* Ajustar la posición vertical del after */
+  left: 50%;
+  transform: translateX(-50%);
+  /* Centrar horizontalmente el after */
+}
+
+.carousel-caption p {
+  font-size: 20px;
+  margin-top: 0em;
+  text-shadow: 4px 3px 5px rgb(0 0 0 / 34%);
+}
+
+.prev {
+  font-size: 30px;
+  color: $colorPrincipal;
+  border-radius: 50%;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  transition: 0.4s;
+
+  &:hover {
+    color: #fff;
+    background: $colorPrincipal;
+    transition: 0.4s;
+  }
+}
+
+.next {
+  font-size: 30px;
+  color: $colorPrincipal;
+  border-radius: 50%;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  transition: 0.4s;
+
+  &:hover {
+    color: #fff;
+    background: $colorPrincipal;
+    transition: 0.4s;
+  }
+}
+
+.hotel {
+  img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover
+  }
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.zoom-in-image {
+  width: 100%;
+  animation-name: zoom-in;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+.btn-slide {
+  color: #08e5e54f;
+
+  &:active {
+    color: $colorPrincipal;
+  }
+
+  &:hover {
+    color: $colorPrincipal;
+  }
+}
+.botonEdicion{
+  position: fixed;
+  top: 50vh;
+  z-index: 2;
+  background: $secundario;
+  color: #fff;
+  padding: 0.5em 0.4em;
+  padding-left: 0.5em;
+  border-radius: 8px;
+  margin-left: -2em;
+  transition: 0.4s ease;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+    margin-left: -0.2em;
+    transition: 0.4s ease;
+  }
+}
+
+.cursiva {
+  font-family: Satisfy, cursive;
+  text-align: center;
+  color: $colorPrincipal;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.custom {
+  width: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+
+  .custom-col {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow: hidden !important;
+    position: relative;
+    height: 470px;
+    .tituloBlog {
+      position: absolute;
+      top: 50%;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: #1b1e1e 2px 0px 2px;
+  }
+
+    img {
+      width: 100%;
+      height: 470px;
+      object-fit: cover;
+    }
+
+    .card-hover {
+      text-align: center;
+      background: $principal2;
+      color: #fff;
+      position: inherit;
+      padding: 0.8em;
+      padding-bottom: 5em;
+      transition: 0.6s ease;
+
+      h4 {
+        padding-top: 0.8em;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      p {
+        padding: 0.2em;
+        font-size: 14px;
+      }
+
+      a {
+        background: #fff;
+        color: #08e5e5;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 0.4em 1em;
+        border-radius: 2px;
+        border: 1px solid #fff;
+        transition: 0.6s ease;
+
+        &:hover {
+          box-shadow: rgba(15, 167, 191, 0.35) 0px 5px 15px;
+          transition: 0.6s ease;
+        }
+      }
+    }
+
+    &:hover .card-hover {
+      margin-top: -12em;
+      transition: 0.6s ease;
+      position: inherit;
+    }
+    &:hover .tituloBlog{
+      top: 70%;
+      transition: 1s ease;
+    }
+  }
+}
+
+.circulares {
+
+  .circular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+      transition: 0.6s ease;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.274);
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      border-radius: 50%;
+      margin-left: 15px;
+      transition: 1s ease;
+      z-index: 2;
+    }
+
+    &:hover::before {
+      opacity: 1;
+      transition: 1s ease;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: 1s ease;
+      object-fit: cover;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+      transition: 0.6s ease;
+    }
+
+    h3 {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: Satisfy, cursive;
+      font-size: 35px;
+      z-index: 3;
+    }
+  }
+}
+
+.migas {
+  a {
+    color: #545151;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $principal2;
+      text-decoration: none;
+      transition: 0.5s ease;
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 4em;
+
+  .image-container {
+    position: relative;
+  }
+
+  .expand-icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: #fff;
+    padding: 8px;
+    background: $principal2;
+  }
+
+  .submenu {
+    a {
+      color: #000;
+      display: block;
+      margin: 0.5em 1.5em;
+
+      &:hover {
+        text-decoration: none;
+        color: $principal2;
+        transition: 0.4s;
+      }
+    }
+  }
+}
+
+.cardMin {
+  width: 100%;
+  height: 50px;
+  background: $principal2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    margin-right: 1em;
+    font-size: 14px;
+  }
+}
+
+.mensaje {
+  width: 100%;
+  background: #f24a6e;
+  height: auto;
+  text-align: center;
+  color: #fff;
+
+  p {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+}
+
+.toursDetails {
+  background: #F6F4F0;
+  color: #000;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 18px;
+    margin-right: 3em;
+  }
+
+  .resaltado {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+  }
+
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    .popup-content {
+      background-color: #fff;
+      padding: 24px;
+      border-radius: 5px;
+      position: relative;
+      margin-top: 3em;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+
+
+  .dates {
+    background: #000;
+    color: #fff;
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .book {
+    background: #fff;
+    color: #000;
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: bold !important;
+    margin-top: 0.5em;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+}
+
+.itinerary {
+  .card {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    border: none !important;
+
+    .card-header {
+      background: #ebebeb;
+      padding: 0.4em;
+
+      button {
+        color: #000;
+
+        &:hover {
+          text-decoration: none;
+          color: $secundario;
+        }
+
+        &:focus {
+          color: $secundario;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .show {
+      padding-top: 1em;
+      transition: 0.1s ease;
+    }
+  }
+}
+
+.cardDestino {
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  h5 {
+    color: #000;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    position: relative;
+    padding-bottom: 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 18px;
+      height: 3px;
+      background-color: $principal2;
+    }
+  }
+}
+
+.card {
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.4em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: $principal2;
+    }
+  }
+}
+
+.cardBtn {
+  font-size: 14px;
+  text-align: center;
+  background: $principal2;
+  border: 1px solid $principal2;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.4em 1em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:hover {
+    color: #fff;
+    background: linear-gradient(to left, $principal2 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.3s ease-in-out;
+    border: none;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: #fff !important;
+    background-color: $principal2 !important;
+    border-color: $principal2 !important;
+  }
+
+  &:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.djm2 {
+  color: $principal2;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.popupBook {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popupBookContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.closeBookContent {
+  top: 0px;
+  position: absolute;
+  right: 0px;
+  font-size: 18px;
+  cursor: pointer;
+  background: red;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .info .infoMail {
+    margin-left: 0px;
+  }
+  .carousel-caption h5{
+    font-size: 30px;
+    padding-bottom:0.6em;
+  }
+
+  .containerReviews {
+    background: linear-gradient(rgb(14 14 14 / 26%), rgb(6 120 137 / 45%)), url(../img/fondos/Nevado-Huascaran-Peru-thumb.webp) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .cardReview {
+      text-align: center;
+    }
+  }
+  .circulares {
+
+    .circular {
+      height: 340px;
+    }
+  }
+
+  .info .infoMail2 {
+    text-align: center;
+  }
+
+  .redesContent {
+    margin-bottom: 0.6em;
+  }
+
+  .custom-container h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-left: 0;
+  }
+
+  .responsive {
+    display: none;
+  }
+
+  .hotel {
+    margin-bottom: 1em;
+
+    img {
+      height: 220px;
+    }
+  }
+
+}

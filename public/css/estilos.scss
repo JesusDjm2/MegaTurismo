@@ -1,0 +1,540 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.sticky-top {
+  background: #fff;
+}
+
+.navbar-toggler span {
+  color: #000 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #000;
+  transition: 0.8s;
+  position: relative;
+}
+.navbar-expand-lg .navbar-nav .nav-link .caret {
+  color: #000;
+  transition: 0.8s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover .caret {
+  color: #08e5e5;
+  transition: 0.8s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #08e5e5;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #08e5e5;
+  transition: width 0.8s;
+}
+
+.searchMenu input {
+  border: 1px solid #9f9f9f !important;
+  border-radius: 4px;
+  margin: 0em 0em 0em 1em;
+}
+.searchMenu input:focus-visible {
+  border: 1px solid #08e5e5 !important;
+}
+.searchMenu button {
+  border: none;
+  padding: 0.4em;
+  border-radius: 5px;
+  transition: 0.4s;
+  background: transparent;
+}
+.searchMenu button:hover {
+  background: #15c9c9;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.custom-container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.custom-container img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.custom-container h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 5em;
+  color: white;
+  /* background: rgb(21 201 201 / 40%); */
+  text-shadow: 3px 3px 1px rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 0.2em;
+  border-radius: 11px;
+}
+
+.bg-dark {
+  color: #fff;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+.bg-dark h4 {
+  color: #fff;
+}
+.bg-dark h4:after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: #15c9c9;
+}
+.bg-dark .links {
+  padding-bottom: 3em;
+}
+.bg-dark .links ul {
+  list-style: none;
+  margin-left: -2em;
+}
+.bg-dark .links ul li {
+  font-size: 14px;
+}
+.bg-dark .links ul li:hover span {
+  visibility: visible;
+  transition: 0.2s ease;
+  color: #15c9c9;
+}
+.bg-dark .links ul li span {
+  visibility: hidden;
+  transition: 0.2s ease;
+  color: #15c9c9;
+}
+.bg-dark .links a {
+  color: #fff;
+  transition: 0.6s;
+  text-decoration: none;
+}
+.bg-dark .links a:hover {
+  color: #08e5e5;
+  transition: 0.6s;
+}
+.bg-dark .links .sociales a {
+  margin-right: 0.6em;
+  font-size: 24px;
+}
+.bg-dark .links .sociales .contact a {
+  font-size: 14px;
+}
+.bg-dark .derechos {
+  font-size: 13px;
+}
+
+.btnReserva {
+  color: #fff;
+  border: 1px solid red;
+  padding: 0.4em 2em;
+  border-radius: 5px;
+  background: red;
+}
+.btnReserva:hover {
+  background: rgb(216, 23, 23);
+  text-decoration: none;
+  color: #fff;
+}
+
+.carousel-inner .col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.navMega ul li a {
+  font-family: Poppins, sans-serif;
+  color: #484848;
+  font-weight: bold;
+}
+
+.megaMenu {
+  border-bottom: 1px dashed grey;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.info {
+  background: #15c9c9;
+  color: #fff;
+}
+.info .infoMail {
+  margin-left: 6em;
+}
+.info span {
+  font-size: 14px;
+}
+.info .redesContent {
+  padding-right: 8em;
+}
+.info .redesContent .redes {
+  float: right;
+  margin-left: 1em;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 70px;
+}
+
+.prev {
+  font-size: 30px;
+  color: #08e5e5;
+  border-radius: 50%;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  transition: 0.4s;
+}
+.prev:hover {
+  color: #fff;
+  background: #08e5e5;
+  transition: 0.4s;
+}
+
+.next {
+  font-size: 30px;
+  color: #08e5e5;
+  border-radius: 50%;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  transition: 0.4s;
+}
+.next:hover {
+  color: #fff;
+  background: #08e5e5;
+  transition: 0.4s;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.zoom-in-image {
+  animation-name: zoom-in;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+.btn-slide {
+  color: rgba(8, 229, 229, 0.3098039216);
+}
+.btn-slide:active {
+  color: #08e5e5;
+}
+.btn-slide:hover {
+  color: #08e5e5;
+}
+
+.cursiva {
+  font-family: Satisfy, cursive;
+  text-align: center;
+  color: #08e5e5;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.custom {
+  width: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.custom .custom-col {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  overflow: hidden !important;
+  position: relative;
+  height: 470px;
+}
+.custom .custom-col img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+.custom .custom-col .card-hover {
+  text-align: center;
+  background: #08e5e5;
+  color: #fff;
+  position: inherit;
+  padding-bottom: 1.8em;
+  transition: 0.6s ease;
+}
+.custom .custom-col .card-hover h4 {
+  padding-top: 0.8em;
+  color: #fff;
+}
+.custom .custom-col .card-hover a {
+  background: #fff;
+  color: #08e5e5;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.4em 1em;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  transition: 0.6s ease;
+}
+.custom .custom-col .card-hover a:hover {
+  box-shadow: rgba(15, 167, 191, 0.35) 0px 5px 15px;
+  transition: 0.6s ease;
+}
+.custom .custom-col:hover .card-hover {
+  margin-top: -10em;
+  transition: 0.6s ease;
+  position: inherit;
+}
+
+.circulares .circular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 330px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.circulares .circular:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  transition: 0.6s ease;
+}
+.circulares .circular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.274);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: 50%;
+  margin-left: 15px;
+  transition: 1s ease;
+}
+.circulares .circular:hover::before {
+  opacity: 1;
+  transition: 1s ease;
+}
+.circulares .circular img {
+  display: block;
+  width: 142%;
+  height: auto;
+  transition: 1s ease;
+}
+.circulares .circular:hover img {
+  width: 150%;
+  height: auto;
+  transition: 1s ease;
+}
+.circulares .circular h3 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Satisfy, cursive;
+  font-size: 35px;
+}
+
+.migas a {
+  color: #545151;
+  transition: 0.5s ease;
+}
+.migas a:hover {
+  color: #15c9c9;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.sticky {
+  position: sticky;
+  top: 3em;
+}
+.sticky .image-container {
+  position: relative;
+}
+.sticky .expand-icon {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: #fff;
+  padding: 8px;
+  background: #15c9c9;
+}
+.sticky .submenu a {
+  color: #000;
+  display: block;
+  margin: 0.5em 1.5em;
+}
+.sticky .submenu a:hover {
+  text-decoration: none;
+  color: #15c9c9;
+  transition: 0.4s;
+}
+
+.cardMin {
+  width: 100%;
+  height: 50px;
+  background: #15c9c9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardMin span {
+  margin-right: 1em;
+  font-size: 14px;
+}
+
+.mensaje {
+  width: 100%;
+  background: #f24a6e;
+  height: auto;
+  text-align: center;
+  color: #fff;
+}
+.mensaje p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.toursDetails {
+  background: #F6F4F0;
+  color: #000;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toursDetails span {
+  font-size: 18px;
+  margin-right: 3em;
+}
+.toursDetails .resaltado {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.toursDetails a {
+  display: block;
+  text-align: center;
+}
+.toursDetails .dates {
+  background: #000;
+  color: #fff;
+  padding: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.toursDetails .book {
+  background: #fff;
+  color: #000;
+  padding: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-weight: bold !important;
+  margin-top: 0.5em;
+  border: 1px solid #000;
+}
+
+.card .card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card .cardBtn {
+  font-size: 14px;
+  text-align: center;
+  background: #15c9c9;
+  border: 1px solid #15c9c9;
+  color: #fff;
+  border-radius: 3px;
+  padding: 0.2em 1em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.card .cardBtn:hover {
+  color: #fff;
+  background: linear-gradient(to left, #15c9c9 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.3s ease-in-out;
+  border: none;
+}
+.card .cardBtn:active {
+  color: #fff !important;
+  background-color: #15c9c9 !important;
+  border-color: #15c9c9 !important;
+}
+.card .cardBtn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.djm2 {
+  color: #15c9c9;
+}
+.djm2:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .info .infoMail {
+    margin-left: 0px;
+  }
+  .info .infoMail2 {
+    text-align: center;
+  }
+  .redesContent {
+    margin-bottom: 0.6em;
+  }
+  .responsive {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.scss.map */
